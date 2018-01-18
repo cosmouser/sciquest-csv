@@ -52,8 +52,7 @@ end
 # Define a wait
 wait = Selenium::WebDriver::Wait.new(:timeout => 15)
 # Initialize the browser
-# options = Selenium::WebDriver::Firefox::Options.new(args: ['-headless'])
-options = Selenium::WebDriver::Firefox::Options.new
+options = Selenium::WebDriver::Firefox::Options.new(args: ['-headless'])
 driver = Selenium::WebDriver.for(:firefox, options: options)
 puts 'Initializing browser'
 
